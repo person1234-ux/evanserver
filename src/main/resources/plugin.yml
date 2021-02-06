@@ -1,0 +1,6 @@
+name: evanserver
+version: ${project.version}
+main: ${main.class}
+author: Person
+api-version: 1.13
+
