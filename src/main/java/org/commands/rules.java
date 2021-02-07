@@ -23,7 +23,7 @@ public class rules extends SimpleCommand {
 	protected void onCommand() {
 		checkConsole();
 		Player player = getPlayer();
-		player.sendMessage(ChatColor.RED +"Rules to be released soon");
+		player.sendMessage(ChatColor.RED +"Rules to be released soon.");
 
 	}
 }
