@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2021. This is open source and provided by person
+ * Copyright (c) 2021. This is open source only requirment is that you give me credit
  */
 
 package org.items;

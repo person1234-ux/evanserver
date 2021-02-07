@@ -1,4 +1,8 @@
 
+/*
+ * Copyright (c) 2021. This is open source only requirment is that you give me credit
+ */
+
 package org.items;
 
 import org.bukkit.Bukkit;

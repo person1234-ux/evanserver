@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2021. This is open source and provided by person
+ * Copyright (c) 2021. This is open source only requirment is that you give me credit
  */
 
 package org.event;
@@ -25,11 +25,11 @@ public class FoodEAting implements Listener {
 		final int randomnumber = rn.nextInt(2);
 		if (items.getItemMeta().getLocalizedName().equals("CUSTOM_CARROT")) {
 			if (randomnumber == 0) {
-				player.addPotionEffect(new PotionEffect(PotionEffectType.JUMP, 12000, 3));
+				player.addPotionEffect(new PotionEffect(PotionEffectType.JUMP, 20*60*5, 3));
 			}
 			else {
-				Bukkit.broadcastMessage(player.getName() + " was unlucky and got nausa from the golden carrot");
-				player.addPotionEffect(new PotionEffect(PotionEffectType.CONFUSION, 6000,3,true, false));
+				Bukkit.broadcastMessage(player.getName() + " was unlucky and got nausea from the golden carrot");
+				player.addPotionEffect(new PotionEffect(PotionEffectType.CONFUSION, 20*30,3,true, false));
 			}
 
 

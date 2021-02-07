@@ -1,8 +1,15 @@
+/*
+ * Copyright (c) 2021. This is open source only requirment is that you give me credit
+ */
+
 package org.main;
 
 import org.commands.about;
+import org.commands.discord;
+import org.commands.spawn;
 import org.event.AXE;
 import org.event.FoodEAting;
+
 import org.event.join;
 import org.items.*;
 import org.mineacademy.fo.Common;
@@ -31,6 +38,11 @@ public class evanserver extends SimplePlugin  {
 		so.soup();
 		eh.Evanskull();
 		gw.customgoldensword();
+		Person_head ph = new Person_head();
+		ph.personhead();
+		registerCommand(new spawn());
+		registerCommand(new discord());
+
 //
 
 	}

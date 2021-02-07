@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2021. This is open source and provided by person
+ * Copyright (c) 2021. This is open source only requirment is that you give me credit
  */
 
 package org.items;
@@ -30,7 +30,7 @@ public class Golden_sword implements Listener {
 		lore.add("Gives a lot but breaks easily"); //todo come up with a better name for the sword.
 		meta.setLore(lore);
 		meta.setDisplayName("Gold that breaks");
-		meta.addEnchant(Enchantment.LOOT_BONUS_MOBS, 100,true);
+		meta.addEnchant(Enchantment.LOOT_BONUS_MOBS, 50,true);
 		golden_looting_sword.setItemMeta(meta);
 		ShapedRecipe r = new ShapedRecipe(golden_looting_swordkey, golden_looting_sword);
 		r.shape("I&r","*%@","#!m");
