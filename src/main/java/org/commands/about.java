@@ -37,7 +37,7 @@ public class about extends SimpleCommand {
 
 
 		} else {
-			System.out.println("This command can only be used by the player");
+			System.out.println("This command can only be used by the player.");
 		}
 
 	}
