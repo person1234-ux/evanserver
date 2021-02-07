@@ -26,8 +26,7 @@ public class FoodEAting implements Listener {
 		if (items.getItemMeta().getLocalizedName().equals("CUSTOM_CARROT")) {
 			if (randomnumber == 0) {
 				player.addPotionEffect(new PotionEffect(PotionEffectType.JUMP, 20*60*5, 3));
-			}
-			else {
+			}			else {
 				Bukkit.broadcastMessage(player.getName() + " was unlucky and got nausea from the golden carrot");
 				player.addPotionEffect(new PotionEffect(PotionEffectType.CONFUSION, 20*30,3,true, false));
 			}

@@ -4,12 +4,16 @@
 
 package org.commands;
 
+import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 import org.mineacademy.fo.command.SimpleCommand;
 
 import java.util.List;
 
 public class discord extends SimpleCommand {
+	/**
+	 * give the player the discord server
+	 */
 	public discord() {
 		super("discord");
 		setPermission(null);
@@ -17,9 +21,14 @@ public class discord extends SimpleCommand {
 
 	@Override
 	protected void onCommand() {
-		checkConsole();
-		Player player = getPlayer();
-		player.sendMessage("The discord server is " +"https://discord.gg/mrVYEDpgW4");
+		if (sender instanceof Player){
+
+			Player player = getPlayer();
+			player.sendMessage("The discord server is " + ChatColor.DARK_BLUE +"https://discord.gg/mrVYEDpgW4");
+		}
+		else {
+			System.out.println("The discord server is https://discord.gg/mrVYEDpgW4");
+		}
 
 	}
 }

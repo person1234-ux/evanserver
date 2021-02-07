@@ -16,6 +16,9 @@ import org.mineacademy.fo.command.SimpleCommand;
 import java.util.concurrent.TimeUnit;
 
 public class spawn extends SimpleCommand {
+	/**
+	 * teleports the player to spawn
+	 */
 	public spawn() {
 		super("spawn");
 		setDescription("Teleports the player to spawn");
