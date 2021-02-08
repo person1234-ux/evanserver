@@ -4,10 +4,7 @@
 
 package org.main;
 
-import org.commands.about;
-import org.commands.discord;
-import org.commands.rules;
-import org.commands.spawn;
+import org.commands.*;
 import org.event.AXE;
 import org.event.FoodEAting;
 
@@ -44,6 +41,7 @@ public class evanserver extends SimplePlugin  {
 		registerCommand(new spawn());
 		registerCommand(new discord());
 		registerCommand(new rules());
+		registerCommand(new github());
 
 //
 
