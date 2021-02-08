@@ -17,7 +17,7 @@ public class rules extends SimpleCommand {
 		setPermission(null);
 		setUsage("/rules");
 		setName("rules");
-		setCooldown(10, TimeUnit.SECONDS);
+		setCooldown(15, TimeUnit.SECONDS);
 
 	}
 
