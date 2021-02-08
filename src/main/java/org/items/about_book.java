@@ -5,8 +5,10 @@
 package org.items;
 
 import org.bukkit.Material;
+import org.bukkit.enchantments.Enchantment;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Listener;
+import org.bukkit.inventory.ItemFlag;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.BookMeta;
 
@@ -22,6 +24,8 @@ public class about_book implements Listener {
 		meta.setDisplayName("Welcome");
 		ArrayList<String> lore = new ArrayList<>();
 		meta.setLore(lore);
+		meta.addEnchant(Enchantment.VANISHING_CURSE, 1,true);
+		meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
 
 	items.setItemMeta(meta);
 

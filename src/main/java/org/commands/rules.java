@@ -9,6 +9,7 @@ import org.bukkit.entity.Player;
 import org.mineacademy.fo.command.SimpleCommand;
 
 import java.util.ArrayList;
+import java.util.concurrent.TimeUnit;
 
 public class rules extends SimpleCommand {
 	public rules() {
@@ -16,6 +17,7 @@ public class rules extends SimpleCommand {
 		setPermission(null);
 		setUsage("/rules");
 		setName("rules");
+		setCooldown(10, TimeUnit.SECONDS);
 
 	}
 
