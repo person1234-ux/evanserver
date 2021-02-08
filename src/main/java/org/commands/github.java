@@ -1,14 +1,14 @@
 /*
- * Copyright (c) 2021. This is open source only requirment is that you give me credit
+ * Copyright (c) $today.year.EvanServer is licensed under Attribution 4.0 International. (https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1) (https://github.com/person1234-ux/evanserver)
  */
 
 package org.commands;
 
 import org.bukkit.entity.Player;
 import org.mineacademy.fo.command.SimpleCommand;
-import sun.java2d.pipe.SpanShapeRenderer;
 
 import java.util.concurrent.TimeUnit;
+
 
 public class github extends SimpleCommand {
 	public github() {

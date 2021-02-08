@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2021. This is open source only requirment is that you give me credit
+ * Copyright (c) $today.year.EvanServer is licensed under Attribution 4.0 International. (https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1) (https://github.com/person1234-ux/evanserver)
  */
 
 package org.commands;
@@ -27,6 +27,7 @@ public class rules extends SimpleCommand {
 		Player player = getPlayer();
 		player.sendMessage(ChatColor.RED +"Rules to be released soon.");
 		player.sendMessage("Please open a pull request on https://github.com/person1234-ux/evanserver/blob/master/src/main/java/org/commands/rules.java");
+
 
 	}
 }
