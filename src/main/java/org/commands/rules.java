@@ -24,6 +24,7 @@ public class rules extends SimpleCommand {
 		checkConsole();
 		Player player = getPlayer();
 		player.sendMessage(ChatColor.RED +"Rules to be released soon.");
+		player.sendMessage("Please dm person on discord if you have any rule requests");
 
 	}
 }
