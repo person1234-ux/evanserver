@@ -68,18 +68,18 @@
     </properties>
 
     <!--
-       Configure where should Maven look for other libraries and plugins we
-       want to use in our plugin. Those libraries and plugins can you then
+       Configure where should Maven look for other libraries and blockplugincommand we
+       want to use in our plugin. Those libraries and blockplugincommand can you then
        reference below in the dependencies section.
 
        Each repository has two parts - the id and url. The id does not
        really matter, however the URL must contain a valid Maven repository
        where the dependency is "installed" (that's why we call the goal "install"
        because we want to install our plugin on our PC as well so that we can
-       use it in our other plugins together without linking it as a dependency)
+       use it in our other blockplugincommand together without linking it as a dependency)
 
        By default we use the Spigot repository for Spigot and the central Maven
-       repo for many other plugins.
+       repo for many other blockplugincommand.
    -->
     <repositories>
         <repository>
@@ -122,7 +122,7 @@
     </pluginRepositories>
 
     <!--
-       Configure what other libraries or plugins are we going to use in this plugin.
+       Configure what other libraries or blockplugincommand are we going to use in this plugin.
 
        As a starting point, we are importing the Spigot API and Foundation.
    -->
@@ -180,10 +180,10 @@
     <build>
 
         <!--
-           When we are building your plugins, what plugins should we use during this process?
+           When we are building your blockplugincommand, what blockplugincommand should we use during this process?
 
-           The plugins here extend the functionality of Maven, just like your plugin enhances Minecraft
-           These are not Minecraft plugins, but only Maven plugins!
+           The blockplugincommand here extend the functionality of Maven, just like your plugin enhances Minecraft
+           These are not Minecraft blockplugincommand, but only Maven blockplugincommand!
        -->
         <plugins>
 

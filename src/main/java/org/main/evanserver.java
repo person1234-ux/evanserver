@@ -1,9 +1,11 @@
+
 /*
  * Copyright (c) $today.year.EvanServer is licensed under Attribution 4.0 International. (https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1) (https://github.com/person1234-ux/evanserver).
  */
 
 package org.main;
 
+import org.chat.blockplugincommand;
 import org.commands.*;
 import org.event.AXE;
 import org.event.FoodEAting;
@@ -42,6 +44,7 @@ public class evanserver extends SimplePlugin  {
 		registerCommand(new discord());
 		registerCommand(new rules());
 		registerCommand(new github());
+		registerEvents(new blockplugincommand());
 
 //
 
