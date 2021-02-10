@@ -5,7 +5,6 @@
 package org.commands;
 
 import org.bukkit.entity.Player;
-import org.bukkit.event.Listener;
 import org.mineacademy.fo.command.SimpleCommand;
 
 public class host extends SimpleCommand{

@@ -20,7 +20,7 @@ public class join implements Listener {
 		event.setJoinMessage("");
 		Common.tell(player, ChatColor.BLUE + "Welcome back " + player.getName());
 		if (!player.hasPlayedBefore()){
-			Bukkit.broadcastMessage(ChatColor.AQUA + "Everyone please welcome " + player.getName() + " to the server for the very first time");
+			Bukkit.broadcastMessage(ChatColor.DARK_AQUA + "Everyone please welcome " + player.getName() + " to the server for the very first time");
 			about_book books = new about_book();
 			books.givebook(player);
 		}
