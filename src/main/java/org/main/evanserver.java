@@ -45,6 +45,8 @@ public class evanserver extends SimplePlugin  {
 		registerCommand(new rules());
 		registerCommand(new github());
 		registerEvents(new blockplugincommand());
+		registerCommand(new host());
+		registerCommand(new sponsor());
 
 //
 

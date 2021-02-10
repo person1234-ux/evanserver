@@ -26,6 +26,9 @@ public class rules extends SimpleCommand {
 		checkConsole();
 		Player player = getPlayer();
 		player.sendMessage(ChatColor.RED +"Rules to be released soon.");
+		player.sendMessage(ChatColor.RED + "Please don't cure in chat or advertise.");
+		player.sendMessage(ChatColor.RED +"Please respect other player including what they have worked on for the smp");
+		player.sendMessage(ChatColor.RED +"Staff members get the final say on all punishments.");
 	
 
 	}
