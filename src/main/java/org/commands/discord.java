@@ -24,7 +24,7 @@ public class discord extends SimpleCommand {
 		if (sender instanceof Player){
 
 			Player player = getPlayer();
-			player.sendMessage("The discord server is " + ChatColor.DARK_BLUE +"https://discord.gg/mrVYEDpgW4");
+			player.sendMessage("The discord server is " + ChatColor.DARK_BLUE +"https://discord.gg/mrVYEDpgW4" + " hope you enjoy it - the staff team);
 		}
 		else {
 			System.out.println("The discord server is https://discord.gg/mrVYEDpgW4");
