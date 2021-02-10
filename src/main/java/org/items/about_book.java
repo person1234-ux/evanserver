@@ -21,6 +21,7 @@ public class about_book implements Listener {
 		meta.setAuthor("Person1");
 		meta.setTitle("Welcome");
 		meta.addPage("To be completed soon. Please wait thanks?");
+		meta.addPage("Welcome to evanmcgaming smp server.");
 		meta.setDisplayName("Welcome");
 		ArrayList<String> lore = new ArrayList<>();
 		meta.setLore(lore);
@@ -29,7 +30,7 @@ public class about_book implements Listener {
 
 	items.setItemMeta(meta);
 
-		player.getInventory().setItemInMainHand(items);
+		player.getInventory().addItem(items);
 
 	}
 }
