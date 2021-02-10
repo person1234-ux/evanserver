@@ -7,10 +7,13 @@ package org.commands;
 import org.bukkit.entity.Player;
 import org.mineacademy.fo.command.SimpleCommand;
 
+import java.util.concurrent.TimeUnit;
+
 public class host extends SimpleCommand{
 
 	public host() {
 		super("host");
+		setCooldown(1, TimeUnit.MINUTES);
 	}
 
 	@Override
