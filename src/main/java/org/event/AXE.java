@@ -37,14 +37,16 @@ public class AXE implements Listener {
 					event.getEntity().getWorld().strikeLightning(event.getEntity().getLocation());// fixed the summon lighting with an axe
 					event.getEntity().getWorld().getBlockAt(event.getEntity().getLocation()).setType(Material.AIR);
 					player.addPotionEffect(new PotionEffect(PotionEffectType.FIRE_RESISTANCE, 30, 1,false, false));
+					event.getEntity().sendMessage("I have been smite");
 
 
 
 
 
 				}
-			} catch (NullPointerException e) {
 
+			} catch (NullPointerException e) {
+			e.printStackTrace();
 			}
 
 		}
@@ -53,8 +55,7 @@ public class AXE implements Listener {
 
 	@EventHandler //this cancels the damage that the player takes when the using the axe
 	public void preventdamage(EntityDamageEvent event){
-		if(event.getEntity() instanceof Player) {
-		}
+
 
 		if (pl.contains(event.getEntity().getUniqueId())){
 
