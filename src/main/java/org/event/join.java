@@ -11,6 +11,7 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.items.about_book;
+import org.items.rules_book;
 import org.mineacademy.fo.Common;
 
 public class join implements Listener {
@@ -22,6 +23,8 @@ public class join implements Listener {
 		if (!player.hasPlayedBefore()){
 			Bukkit.broadcastMessage(ChatColor.DARK_AQUA + "Everyone please welcome " + player.getName() + " to the server for the very first time");
 			about_book books = new about_book();
+			rules_book rulesBook = new rules_book();
+			rulesBook.get_rules_book(player);
 			books.givebook(player);
 		}
 

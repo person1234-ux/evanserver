@@ -7,7 +7,7 @@ package org.commands;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 import org.mineacademy.fo.command.SimpleCommand;
-
+import org.items.rules_book;
 import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 
@@ -25,10 +25,13 @@ public class rules extends SimpleCommand {
 	protected void onCommand() {
 		checkConsole();
 		Player player = getPlayer();
-		player.sendMessage(ChatColor.RED +"Rules to be released soon.");
-		player.sendMessage(ChatColor.RED + "Please don't cure in chat or advertise.");
-		player.sendMessage(ChatColor.RED +"Please respect other player including what they have worked on for the smp");
+		rules_book rulesBook = new rules_book();
+
+		rulesBook.get_rules_book(player);
+		player.sendMessage(ChatColor.RED +"Please read the rules.");
 		player.sendMessage(ChatColor.RED +"Staff members get the final say on all punishments.");
+
+
 	
 
 	}

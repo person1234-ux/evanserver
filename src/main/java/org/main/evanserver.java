@@ -17,6 +17,7 @@ import org.mineacademy.fo.plugin.SimplePlugin;
 
 public class evanserver extends SimplePlugin  {
 
+
 	@Override
 	protected void onPluginStart() {
 		Common.log("evanserver plugin started by Person");
