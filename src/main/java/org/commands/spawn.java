@@ -35,7 +35,7 @@ public class spawn extends SimpleCommand {
 		else
 		{
 			Player p = getPlayer();
-			Location loc = new Location(Bukkit.getWorld("world"), 382, 77, 48.5f); //todo update the spawn cords
+			Location loc = new Location(Bukkit.getWorld("world"), 393.71f, 78.1f, 39.5f); //todo update the spawn cords
 			if(p.getWorld().getName().equals("world")){
 				p.teleport(loc);
 				p.sendMessage(ChatColor.AQUA + p.getName() + " you have been teleported to spawn");
