@@ -7,6 +7,7 @@ package org.items;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
+import org.bukkit.entity.Chicken;
 import org.bukkit.event.Listener;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.ShapedRecipe;
@@ -36,6 +37,7 @@ public class evanhead implements Listener {
 		r.setIngredient('#',Material.SUGAR);
 		r.setIngredient('%', Material.DIAMOND);
 		Bukkit.addRecipe(r);
+
 
 
 

@@ -43,6 +43,8 @@ public class evanserver extends SimplePlugin {
 		gw.customgoldensword();
 		Person_head ph = new Person_head();
 		ph.personhead();
+		kfc kf = new kfc();
+		kf.kfc_chicken();
 		registerCommand(new spawn());
 		registerCommand(new discord());
 		registerCommand(new rules());
