@@ -22,6 +22,7 @@ public class rules_book implements Listener {
 		//todo make the rule book look better.S
 		meta.addPage("No stealing\nNo Griefing property or players\nDo not be toxic or bully others\nNo potty words\nNo inappropriate builds\nNo cheating or using mods outside of client like lunar or bad lion\nNo duplicating items\nAll damaged property must be replaced");
 		meta.addPage("Shops must be fairly priced and no stealing or taking items without paying.\nDo not make lag farms or builds intended to cause major lag.\nNo hogging, hoarding or intentionally killing animals to prevent others from obtaining them.");
+		meta.addPage("No talking to people using there real life name");
 		meta.setAuthor("Person1");
 		meta.setDisplayName("rules");
 		meta.setTitle("Rules");
