@@ -16,7 +16,7 @@ import org.main.evanserver;
 
 import java.util.ArrayList;
 
-public class Special_soup implements Listener {
+public class  Special_soup implements Listener {
 
 	private ItemStack item = new ItemStack(Material.BEETROOT_SOUP);
 	private ItemMeta meta = item.getItemMeta();

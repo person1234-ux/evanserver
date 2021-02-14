@@ -15,7 +15,9 @@ import org.items.*;
 import org.mineacademy.fo.Common;
 import org.mineacademy.fo.plugin.SimplePlugin;
 
-public class evanserver extends SimplePlugin  {
+
+
+public class evanserver extends SimplePlugin {
 
 
 	@Override
@@ -49,12 +51,5 @@ public class evanserver extends SimplePlugin  {
 		registerCommand(new host());
 		registerCommand(new sponsor());
 
-//
-
 	}
-
-
-
-
-
 }

@@ -7,6 +7,8 @@ package org.event;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Particle;
+import org.bukkit.configuration.InvalidConfigurationException;
+import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.Firework;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -18,15 +20,19 @@ import org.items.rules_book;
 import org.main.evanserver;
 import org.mineacademy.fo.Common;
 
+import java.io.File;
+import java.io.IOException;
+
 public class join implements Listener {
 	@EventHandler
 	public void potatojoin(PlayerJoinEvent event) {
+
 		Player player = event.getPlayer();
 		event.setJoinMessage("");
-		Common.tell(player, ChatColor.BLUE + "Welcome back " + player.getName());
+		player.sendMessage("Welcome back to the server " + player.getName());
 
 
-		player.getWorld().spawn(player.getLocation(), Firework.class);
+
 		if (!player.hasPlayedBefore()){
 			Bukkit.broadcastMessage(ChatColor.DARK_AQUA + "Everyone please welcome " + player.getName() + " to the server for the very first time");
 			about_book books = new about_book();
@@ -35,6 +41,7 @@ public class join implements Listener {
 			player.sendMessage(ChatColor.RED +"Please read the rules.");
 			player.sendMessage(ChatColor.RED +"Staff members get the final say on all punishments.");
 			books.givebook(player);
+			player.sendMessage("For information about protecting your land please visit http://bit.ly/mcgpuser");
 			new BukkitRunnable() {
 				/**
 				 * When an object implementing interface <code>Runnable</code> is used

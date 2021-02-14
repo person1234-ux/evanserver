@@ -35,11 +35,10 @@ public class Lighting_axe implements Listener {
 		ShapedRecipe r = new ShapedRecipe(itemskey, items);
 		r.shape("%%%","%#%","%%%");
 		r.setIngredient('#',Material.DIAMOND_AXE);
-		r.setIngredient('%',Material.DIAMOND);
+		r.setIngredient('%',Material.DIAMOND_BLOCK);
 		Bukkit.addRecipe(r);
 
 	}
-
 	public void getItem(Player player){
 		ArrayList<String> lore = new ArrayList<>();
 		lore.add("Lightning Axe");
