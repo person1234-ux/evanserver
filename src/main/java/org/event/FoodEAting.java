@@ -54,6 +54,7 @@ public class FoodEAting implements Listener {
 		if (item.getItemMeta().getLocalizedName().equals("KFC")){
 			player.addPotionEffect(new PotionEffect(PotionEffectType.SLOW, 20*60,1));
 			player.addPotionEffect(new PotionEffect(PotionEffectType.SATURATION, 20*60*5, 1));
+			player.sendMessage("Oh boy I'm mc lovin' it");
 		}
 	}
 

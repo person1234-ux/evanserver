@@ -45,13 +45,14 @@ public class evanserver extends SimplePlugin {
 		ph.personhead();
 		kfc kf = new kfc();
 		kf.kfc_chicken();
-		registerCommand(new spawn());
 		registerCommand(new discord());
+		registerCommand(new lobby());
 		registerCommand(new rules());
 		registerCommand(new github());
 		registerEvents(new blockplugincommand());
 		registerCommand(new host());
 		registerCommand(new sponsor());
+		registerCommand(new spawn());
 
 	}
 }
