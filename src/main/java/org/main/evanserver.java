@@ -53,6 +53,7 @@ public class evanserver extends SimplePlugin {
 		registerCommand(new host());
 		registerCommand(new sponsor());
 		registerCommand(new spawn());
+		registerCommand(new recipes());
 
 
 	}

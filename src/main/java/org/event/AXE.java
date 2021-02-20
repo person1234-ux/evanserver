@@ -26,7 +26,7 @@ public class AXE implements Listener {
 	/**
 	 * stores the player uuid
 	 */
-	Set<UUID> pl = new HashSet<>();
+	private Set<UUID> pl = new HashSet<>();
 
 	@EventHandler
 	public void customaxe(EntityDamageByEntityEvent event) {
@@ -44,6 +44,7 @@ public class AXE implements Listener {
 					if (player.getInventory().getItemInMainHand().getItemMeta().getLocalizedName().equals("LIGHTNING_AXE")) {
 						if(player.getName().equals("DougPhantom9")){
 							player.sendMessage("person has chosen to disable your lighting axe to mess with you");
+							Common.log("dough has gotten the message about having lighting axe disabled");
 
 						} else {
 							pl.add(player.getUniqueId());
