@@ -7,6 +7,7 @@ package org.commands;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Location;
+import org.bukkit.Sound;
 import org.bukkit.entity.Player;
 import org.mineacademy.fo.command.SimpleCommand;
 
@@ -28,6 +29,7 @@ public class lobby extends SimpleCommand {
 	protected void onCommand() {
 		if (!(sender instanceof Player)){
 			System.out.println("This command can only be ran by the player!");
+
 
 		}
 		else

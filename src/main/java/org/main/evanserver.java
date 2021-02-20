@@ -54,5 +54,6 @@ public class evanserver extends SimplePlugin {
 		registerCommand(new sponsor());
 		registerCommand(new spawn());
 
+
 	}
 }

@@ -19,7 +19,6 @@ public class blockplugincommand implements Listener {
 				event.setCancelled(true);
 				if(player.hasPermission("evanserver.fake")){
 					player.sendMessage(ChatColor.WHITE + "Plugins (1): "+ ChatColor.GREEN +"evanserver");
-					//todo ad an option toggle this in the config
 				}
 			}
 

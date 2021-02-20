@@ -8,6 +8,7 @@ package org.items;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
+import org.bukkit.enchantments.Enchantment;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Listener;
 import org.bukkit.inventory.ItemStack;
@@ -30,6 +31,7 @@ public class Lighting_axe implements Listener {
 		meta.setLore(lore);
 		meta.setDisplayName("Lightning");
 		meta.setLocalizedName("LIGHTNING_AXE");
+		meta.addEnchant(Enchantment.VANISHING_CURSE, 1, true);
 
 		items.setItemMeta(meta);
 		ShapedRecipe r = new ShapedRecipe(itemskey, items);

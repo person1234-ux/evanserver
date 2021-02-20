@@ -7,6 +7,7 @@ package org.items;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
+import org.bukkit.attribute.Attribute;
 import org.bukkit.event.Listener;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.ShapedRecipe;
@@ -29,6 +30,8 @@ public class Person_head implements Listener {
 		lore.add("Person's skull");
 		meta.setLore(lore);
 		meta.setOwner("person1");
+		meta.setLocalizedName("person1's_skull");
+
 		person_skull.setItemMeta(meta);
 		ShapedRecipe r = new ShapedRecipe(person_skullkey, person_skull);
 		r.shape("!!!","!@!","!!!");

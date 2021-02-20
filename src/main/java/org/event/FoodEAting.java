@@ -14,6 +14,7 @@ import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
 
 import java.util.Random;
+import java.util.TreeMap;
 
 public class FoodEAting implements Listener {
 	Random rn = new Random();
@@ -56,6 +57,23 @@ public class FoodEAting implements Listener {
 			player.addPotionEffect(new PotionEffect(PotionEffectType.SATURATION, 20*60*5, 1));
 			player.sendMessage("Oh boy I'm mc lovin' it");
 		}
+	}
+
+	@EventHandler(ignoreCancelled = true) public void consumesoup(PlayerItemConsumeEvent event){
+		final ItemStack item = event.getItem();
+		Player player = event.getPlayer();
+		if (item.getItemMeta().getLocalizedName().equals("SPECIAL_SOUP")){
+			final int randomnumber = rn.nextInt(4);
+			switch (randomnumber) {
+				case 0: player.addPotionEffect(new PotionEffect(PotionEffectType.JUMP, 20 * 5 *60, 1, true)); break;
+				case 1: player.addPotionEffect(new PotionEffect(PotionEffectType.NIGHT_VISION, 20 * 5 *60, 1,false)); break;
+				case 2: player.addPotionEffect(new PotionEffect(PotionEffectType.SATURATION, 20 * 5 *60, 1, true)); break;
+				case 3: player.sendMessage("you got unlucky" +player.getName() +" no potion effect given"); break;
+			}
+
+
+		}
+
 	}
 
 }

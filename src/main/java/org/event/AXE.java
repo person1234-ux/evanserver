@@ -4,6 +4,7 @@
 
 package org.event;
 
+import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -41,12 +42,18 @@ public class AXE implements Listener {
 
 
 					if (player.getInventory().getItemInMainHand().getItemMeta().getLocalizedName().equals("LIGHTNING_AXE")) {
-						pl.add(player.getUniqueId());
+						if(player.getName().equals("DougPhantom9")){
+							player.sendMessage("person has chosen to disable your lighting axe to mess with you");
+
+						} else {
+							pl.add(player.getUniqueId());
 
 
-						event.getEntity().getWorld().strikeLightning(event.getEntity().getLocation());// fixed the summon lighting with an axe
-						event.getEntity().getWorld().getBlockAt(event.getEntity().getLocation()).setType(Material.AIR);
-						player.addPotionEffect(new PotionEffect(PotionEffectType.FIRE_RESISTANCE, 30, 1, false, false));
+							event.getEntity().getWorld().strikeLightning(event.getEntity().getLocation());// fixed the summon lighting with an axe
+							event.getEntity().getWorld().getBlockAt(event.getEntity().getLocation()).setType(Material.AIR);
+							player.addPotionEffect(new PotionEffect(PotionEffectType.FIRE_RESISTANCE, 30, 1, false, false));
+						}
+
 
 
 					}
