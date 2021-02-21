@@ -3,6 +3,8 @@ version: ${project.version}
 main: ${main.class}
 author: Person
 api-version: 1.13
-
+permission:
+  evanserver.fly:
+    default: op
 
 
