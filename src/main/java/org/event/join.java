@@ -42,7 +42,7 @@ private ArrayList<Player> onlineplayers = new ArrayList<>();
 		 */
 		for(int i = 0; i< onlineplayers.size(); i++){
 			Player p = (Player) onlineplayers.get(i);
-			if(p.hasPermission("evanserver.joinmessage")){
+			if(p.hasPermission("evanserver.joinmessage") && !p.getName().equalsIgnoreCase(player.getName())){
 				p.sendMessage( ChatColor.YELLOW + player.getPlayer().getName() + " has joined the server");
 			}
 		}

@@ -20,7 +20,7 @@ public class about_book implements Listener {
 	public void givebook(Player player){
 		meta.setAuthor("Person1");
 		meta.setTitle("Welcome");
-		meta.addPage("To be completed soon. Please wait thanks?");
+		meta.addPage("To be completed soon. Please wait thanks");
 		meta.addPage("Welcome to evanmcgaming smp server.");
 		meta.setDisplayName("Welcome");
 		ArrayList<String> lore = new ArrayList<>();

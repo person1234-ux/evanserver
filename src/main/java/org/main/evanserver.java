@@ -54,6 +54,7 @@ public class evanserver extends SimplePlugin {
 		registerCommand(new sponsor());
 		registerCommand(new spawn());
 		registerCommand(new recipes());
+		registerCommand(new fly());
 
 
 	}
