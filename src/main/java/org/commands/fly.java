@@ -24,13 +24,12 @@ public class fly extends SimpleCommand {
 		if(!player.hasPermission("evanserver.fly")){
 			player.sendMessage(ChatColor.RED +"You don't have the permissions to do that");
 		} else {
-			if(player.isFlying()){
+			if(player.getAllowFlight()){
 				player.sendMessage(ChatColor.GREEN + "fly has been disabled");
-				player.setFlying(false);
+				player.setAllowFlight(false);
 			} else{
 				player.sendMessage(ChatColor.GREEN +"fly has been enabled");
 				player.setAllowFlight(true);
-				player.setFlying(true);
 			}
 		}
 
