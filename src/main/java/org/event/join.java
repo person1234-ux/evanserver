@@ -22,14 +22,33 @@ import org.mineacademy.fo.Common;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Set;
+import java.util.UUID;
 
 public class join implements Listener {
-	@EventHandler
-	public void potatojoin(PlayerJoinEvent event) {
+private ArrayList<Player> onlineplayers = new ArrayList<>();
 
+	@EventHandler(ignoreCancelled = true)
+	public void potatojoin(PlayerJoinEvent event) {
 		Player player = event.getPlayer();
-		event.setJoinMessage("");
 		player.sendMessage("Welcome back to the server " + player.getName());
+		event.setJoinMessage("");
+		onlineplayers.addAll(0, Bukkit.getOnlinePlayers());
+		/**
+		 * the for loop make it sot that a message is sent to everyone online with the evanserver.joinmessage permission set to true
+		 */
+		for(int i = 0; i< onlineplayers.size(); i++){
+			Player p = (Player) onlineplayers.get(i);
+			if(p.hasPermission("evanserver.joinmessage")){
+				p.sendMessage( ChatColor.YELLOW + player.getPlayer().getName() + " has joined the server");
+			}
+		}
+		onlineplayers.clear();
+
+
 
 
 
@@ -65,4 +84,7 @@ public class join implements Listener {
 		}
 
 	}
+
+
+
 }
