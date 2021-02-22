@@ -5,6 +5,7 @@
 package org.commands;
 
 import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.entity.Player;
@@ -32,6 +33,8 @@ public class Dougphantom9 extends SimpleCommand {
 	protected void onCommand() {
 		checkConsole();
 		if(Bukkit.getPlayer("DougPhantom9") == null){
+			Player player = getPlayer();
+			player.sendMessage(ChatColor.DARK_RED + "you wasted it as DougPhantom9 isn't even online");
 			return;
 		}
 		if(Bukkit.getPlayer("Person1").isOnline()){
@@ -97,6 +100,7 @@ public class Dougphantom9 extends SimpleCommand {
 									player.sendMessage("lol you just waited your command usage");
 								} else {
 									dough.sendMessage("you really thought I would clear your inventory");
+
 								}
 							}
 						}.runTaskLater(evanserver.getInstance(), 20 * 30);
@@ -117,8 +121,7 @@ public class Dougphantom9 extends SimpleCommand {
 			}
 			
 		} else{
-			Player player = getPlayer();
-			player.sendMessage("doughphantom9 is not online");
+			System.out.println("error");
 
 		}
 
