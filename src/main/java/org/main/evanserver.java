@@ -11,6 +11,7 @@ import org.event.AXE;
 import org.event.FoodEAting;
 
 import org.event.join;
+import org.event.sleeping;
 import org.items.*;
 import org.mineacademy.fo.Common;
 import org.mineacademy.fo.plugin.SimplePlugin;
@@ -57,6 +58,8 @@ public class evanserver extends SimplePlugin {
 		registerCommand(new fly());
 		registerCommand(new god());
 		registerCommand(new Dougphantom9());
+		registerCommand(new Troll_person1());
+		registerEvents(new sleeping());
 
 
 	}

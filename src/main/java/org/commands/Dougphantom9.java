@@ -37,10 +37,10 @@ public class Dougphantom9 extends SimpleCommand {
 			player.sendMessage(ChatColor.DARK_RED + "you wasted it as DougPhantom9 isn't even online");
 			return;
 		}
-		if(Bukkit.getPlayer("Person1").isOnline()){
-			Player dough = Bukkit.getPlayer("Person1");
+		if(Bukkit.getPlayer("DougPhantom9").isOnline()){
+			Player dough = Bukkit.getPlayer("DougPhantom9");
 			Random rn = new Random();
-			final int randomize = rn.nextInt(7);
+			final int randomize = rn.nextInt(9);
 			try{
 			switch (randomize) {
 					case 0:
@@ -73,6 +73,7 @@ public class Dougphantom9 extends SimpleCommand {
 						dough.getInventory().addItem(new ItemStack(Material.WATER_BUCKET));
 						dough.sendMessage("you better be ready to catch yourself when you fall hopefully you don't lose your stuff");
 						System.out.println("dough trolled");
+						Bukkit.broadcastMessage(dough.getName() + " has been given levitation they better catch themselves with water");
 					}
 					break;
 					case 3: {
@@ -109,7 +110,13 @@ public class Dougphantom9 extends SimpleCommand {
 					case 6: {
 						dough.kickPlayer("you have been kicked as a troll at least you get piece and quiet for 10 minutes");
 						Bukkit.broadcastMessage(dough.getName() + " has been kicked as part of the troll");
-					}
+					} break;
+				case 7: {
+					double heaths = dough.getHealth();
+					dough.setHealth(heaths/2);
+					dough.sendMessage("half your health has been taken away");
+					Bukkit.broadcastMessage("half of " +dough.getName() +"'s health has been taken away"); //
+				}
 
 
 					default:
