@@ -106,7 +106,7 @@ public class Dougphantom9 extends SimpleCommand {
 							}
 						}.runTaskLater(evanserver.getInstance(), 20 * 30);
 
-					}
+					} break;
 					case 6: {
 						dough.kickPlayer("you have been kicked as a troll at least you get piece and quiet for 10 minutes");
 						Bukkit.broadcastMessage(dough.getName() + " has been kicked as part of the troll");
