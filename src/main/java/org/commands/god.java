@@ -13,6 +13,7 @@ public class god extends SimpleCommand {
 	public god() {
 		super("god");
 		setPermission("evanserver.god");
+		setDescription("put the player in god mode");
 	}
 
 	@Override

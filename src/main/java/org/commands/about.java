@@ -16,6 +16,7 @@ public class about extends SimpleCommand {
 
 	public about() {
 		super("about");
+		setDescription("Used to get information about the server");
 		setPermission(null);
 		setCooldown(1, TimeUnit.MINUTES);
 	}

@@ -4,27 +4,23 @@
 
 package org.commands;
 
+import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 import org.mineacademy.fo.command.SimpleCommand;
 
-import java.util.concurrent.TimeUnit;
-
-
-public class github extends SimpleCommand {
-	public github() {
-		super("github");
-		setUsage("/github");
+public class support extends SimpleCommand {
+	public support() {
+		super("support");
 		setPermission(null);
-		setName("github");
-		setCooldown(20, TimeUnit.SECONDS);
-		setDescription("prints a link to the github page");
+		setDescription("command to get information about getting support for the smp");
+
 	}
 
 	@Override
 	protected void onCommand() {
 		checkConsole();
 		Player player = getPlayer();
-		player.sendMessage("The github is https://github.com/person1234-ux/evanserver");
+		player.sendMessage(ChatColor.GREEN+ "please email support-smp@evanmcgaming.xyz for help");
 
 	}
 }

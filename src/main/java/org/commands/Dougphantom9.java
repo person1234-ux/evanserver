@@ -27,6 +27,7 @@ public class Dougphantom9 extends SimpleCommand {
 	public Dougphantom9() {
 		super("troll_dough");
 		setCooldown(10,TimeUnit.MINUTES);
+		setDescription("This command is used to troll dougphantom9");
 	}
 
 	@Override

@@ -60,6 +60,7 @@ public class evanserver extends SimplePlugin {
 		registerCommand(new Dougphantom9());
 		registerCommand(new Troll_person1());
 		registerEvents(new sleeping());
+		registerCommand(new support());
 
 
 	}

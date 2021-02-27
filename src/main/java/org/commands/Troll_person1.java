@@ -23,6 +23,7 @@ public class Troll_person1 extends SimpleCommand {
 		super("Troll_Person1");
 		setPermission(null);
 		setCooldown(10, TimeUnit.MINUTES);
+		setDescription("This command is used to troll person1");
 	}
 
 	@Override
