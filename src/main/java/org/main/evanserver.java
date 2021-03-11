@@ -51,7 +51,6 @@ public class evanserver extends SimplePlugin {
 		registerCommand(new rules());
 		registerCommand(new github());
 		registerEvents(new blockplugincommand());
-		registerCommand(new host());
 		registerCommand(new sponsor());
 		registerCommand(new spawn());
 		registerCommand(new recipes());
@@ -64,6 +63,8 @@ public class evanserver extends SimplePlugin {
 		registerCommand(new troll_random());
 		registerCommand(new gmc());
 		registerCommand(new gms());
+		custom_el custom_el = new custom_el();
+		custom_el.customitem();
 
 	}
 }

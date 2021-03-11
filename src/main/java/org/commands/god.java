@@ -13,6 +13,7 @@ public class god extends SimpleCommand {
 		super("god");
 
 		setDescription("put the player in god mode");
+		setPermission(null);
 	}
 
 	@Override

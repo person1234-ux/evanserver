@@ -28,7 +28,6 @@ public class about extends SimpleCommand {
 			Player player = getPlayer();
 			player.sendMessage(ChatColor.AQUA +"This server is the unofficial evanmcgaming server");
 			player.sendMessage(ChatColor.AQUA+ "The server recipes will be releases soon");
-			player.sendMessage(ChatColor.DARK_AQUA + "To get information about are host do /host");
 			o.givebook(player);
 
 

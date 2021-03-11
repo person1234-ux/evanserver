@@ -67,8 +67,8 @@ public class Dougphantom9 extends SimpleCommand {
 							}
 						}.runTaskLater(evanserver.getInstance(), 20 * 30);
 
-					}
-					break;
+					} break;
+
 					case 2: {
 						dough.addPotionEffect(new PotionEffect(PotionEffectType.LEVITATION, 20 * 30, 1));
 						dough.getInventory().addItem(new ItemStack(Material.WATER_BUCKET));
