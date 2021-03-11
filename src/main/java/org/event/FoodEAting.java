@@ -14,7 +14,6 @@ import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
 
 import java.util.Random;
-import java.util.TreeMap;
 
 public class FoodEAting implements Listener {
 	Random rn = new Random();
@@ -41,9 +40,9 @@ public class FoodEAting implements Listener {
 		if (item.getItemMeta().getLocalizedName().equals("GOD_POTATO")){
 			player.addPotionEffect(new PotionEffect(PotionEffectType.JUMP, 12000, 3));
 			player.addPotionEffect(new PotionEffect(PotionEffectType.NIGHT_VISION , 12000, 1));
-			player.addPotionEffect(new PotionEffect(PotionEffectType.HEALTH_BOOST, 12000, 5));
-			player.addPotionEffect(new PotionEffect(PotionEffectType.HEAL, 12000,3));
-			player.addPotionEffect(new PotionEffect(PotionEffectType.INCREASE_DAMAGE, 12000,3));
+			player.addPotionEffect(new PotionEffect(PotionEffectType.HEALTH_BOOST, 12000, 2));
+			player.addPotionEffect(new PotionEffect(PotionEffectType.HEAL, 12000,2));
+			player.addPotionEffect(new PotionEffect(PotionEffectType.INCREASE_DAMAGE, 12000,2));
 
 
 		}

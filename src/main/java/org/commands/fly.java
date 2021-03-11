@@ -4,17 +4,17 @@
 
 package org.commands;
 
-import org.bukkit.Bukkit;
+
+
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 import org.mineacademy.fo.command.SimpleCommand;
-
-import java.nio.Buffer;
 
 public class fly extends SimpleCommand {
 	public fly() {
 		super("fly");
 		setPermission("evanserver.fly");
+		setDescription("enables / disables fly for the player");
 	}
 
 	@Override

@@ -27,15 +27,15 @@ public class Dougphantom9 extends SimpleCommand {
 	public Dougphantom9() {
 		super("troll_dough");
 		setCooldown(10,TimeUnit.MINUTES);
-		setDescription("This command is used to troll dougphantom9");
+		setDescription("This command is used to troll dougphantom9. He might hate you after this though");
+		setPermission(null);
 	}
 
 	@Override
 	protected void onCommand() {
-		checkConsole();
 		if(Bukkit.getPlayer("DougPhantom9") == null){
 			Player player = getPlayer();
-			player.sendMessage(ChatColor.DARK_RED + "you wasted it as DougPhantom9 isn't even online");
+			Bukkit.broadcastMessage(ChatColor.DARK_RED + "you wasted it as DougPhantom9 isn't even online");
 			return;
 		}
 		if(Bukkit.getPlayer("DougPhantom9").isOnline()){
@@ -85,29 +85,13 @@ public class Dougphantom9 extends SimpleCommand {
 					}
 					break;
 					case 4: {
-						dough.sendMessage("get ready to have your inventory cleared in half a minute");
-						ItemStack temps = new ItemStack(Material.CHEST);
-						ItemMeta metas = temps.getItemMeta();
-						ArrayList<String> lores = new ArrayList<>();
-						lores.add("chest so you don't lose your stuff");
-						metas.setLore(lores);
-						temps.setItemMeta(metas);
-						dough.getInventory().addItem(temps);
-						Bukkit.broadcastMessage(dough.getName() + " is going to have there inventory cleared soon");
-						new BukkitRunnable() {
-							@Override
-							public void run() {
-								if (!dough.isOnline()) {
-									Player player = getPlayer();
-									player.sendMessage("lol you just waited your command usage");
-								} else {
-									dough.sendMessage("you really thought I would clear your inventory");
+						dough.getLocation().getBlock().setType(Material.COBWEB);
+						dough.setHealth(.5);
+						dough.sendMessage("you better not take any damage or your going to have a rough time");
 
-								}
-							}
-						}.runTaskLater(evanserver.getInstance(), 20 * 30);
-
-					} break;
+						Bukkit.broadcastMessage(dough.getName() + "heath has been set to half a hart");
+					}
+						 break;
 					case 6: {
 						dough.kickPlayer("you have been kicked as a troll at least you get piece and quiet for 10 minutes");
 						Bukkit.broadcastMessage(dough.getName() + " has been kicked as part of the troll");
@@ -117,7 +101,7 @@ public class Dougphantom9 extends SimpleCommand {
 					dough.setHealth(heaths/2);
 					dough.sendMessage("half your health has been taken away");
 					Bukkit.broadcastMessage("half of " +dough.getName() +"'s health has been taken away"); //
-				}
+				} break;
 
 
 					default:

@@ -14,6 +14,7 @@ public class host extends SimpleCommand{
 	public host() {
 		super("host");
 		setCooldown(1, TimeUnit.MINUTES);
+		setPermission(null);
 	}
 
 	@Override

@@ -6,20 +6,24 @@ package org.commands;
 
 import org.bukkit.GameMode;
 import org.bukkit.entity.Player;
-import org.main.evanserver;
 import org.mineacademy.fo.command.SimpleCommand;
 
 public class god extends SimpleCommand {
 	public god() {
 		super("god");
-		setPermission("evanserver.god");
+
 		setDescription("put the player in god mode");
 	}
 
 	@Override
 	protected void onCommand() {
 		checkConsole();
+
 		Player player = getPlayer();
+		if(!player.hasPermission("evanserver.god")){
+			player.sendMessage("god doesn't exist what were you expecting");
+			return;
+		}
 		if (player.getGameMode() != GameMode.SURVIVAL){
 			player.sendMessage("the god command is only available in survival");
 		} else{

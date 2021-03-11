@@ -4,7 +4,6 @@
 
 package org.event;
 
-import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -18,7 +17,6 @@ import org.main.evanserver;
 import org.mineacademy.fo.Common;
 
 import java.util.HashSet;
-import java.util.Objects;
 import java.util.Set;
 import java.util.UUID;
 
@@ -42,18 +40,14 @@ public class AXE implements Listener {
 
 
 					if (player.getInventory().getItemInMainHand().getItemMeta().getLocalizedName().equals("LIGHTNING_AXE")) {
-						if(player.getName().equals("DougPhantom9")){
-							player.sendMessage("person has chosen to disable your lighting axe to mess with you");
-							Common.log("dough has gotten the message about having lighting axe disabled");
 
-						} else {
 							pl.add(player.getUniqueId());
 
 
 							event.getEntity().getWorld().strikeLightning(event.getEntity().getLocation());// fixed the summon lighting with an axe
 							event.getEntity().getWorld().getBlockAt(event.getEntity().getLocation()).setType(Material.AIR);
 							player.addPotionEffect(new PotionEffect(PotionEffectType.FIRE_RESISTANCE, 30, 1, false, false));
-						}
+
 
 
 
